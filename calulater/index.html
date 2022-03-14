@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Calculator</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-size: 60px;
+        color: teal;
+      }
+      #calculator{
+        height: 500px;
+        width: 480px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+         rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+        margin: auto;
+        margin-top: 80px;
+    border-radius: 10px;
+      }
+#input{
+  height: 15%;
+  width: 98%;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+#keyboard{
+  width: 98%;
+  margin: auto;
+  height: 77%;
+
+display: grid;
+grid-template-columns:repeat(4,1fr) ;
+grid-template-rows:repeat(4,80px);
+margin-top:20px;
+gap:10px;
+
+}
+#keyboard>div:hover{
+  background-color: teal;
+  cursor: pointers;
+
+}
+#keyboard>div{
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+  padding: 29px;
+  border-radius: 28px;
+  font-weight:bolder;
+
+
+}
+
+.black{
+  background-color: black;
+  color: white;
+}
+.red{
+  background-color: black;
+  color: white;
+}
+.star{
+  background-color: black;
+  color: white;
+}
+.delet{
+  background-color: orangered;
+  color: white;
+}
+.equal{
+  background-color: black;
+  color: white;
+}
+.slash{
+ background-color: black;
+ color: white;
+}
+      /* use grid to acheive the layout */
+    </style>
+  </head>
+  <body>
+    <h1>Masai Calculator</h1>
+    <div id="calculator">
+      <div id="input"></div>
+      <div id="keyboard">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div class="black"><b>+</b></div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div class="red"><b>.</b></div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div class="star"><b>*</b></div>
+      <div class="delet"><b>C</b></div>
+
+      <div>0</div>
+      <div class="equal"><b>=</b></div>
+      <div class="slash"><b>/</b></div>
+    </div>
+  </div>
+  </body>
+</html>
