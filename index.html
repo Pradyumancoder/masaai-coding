@@ -1,129 +1,136 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>media quaries</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
     <style>
-.container{
-    height: 90%;
-    width: 80%;
-    margin: auto;
-}
-.container>div{
-    height: 250px;
-    width: 70%;
-    margin: auto;
-}
-#main{
-    height: 350px;
-    width:70%;
+      h1 {
+        text-align: center;
+        color: #f84364;
+        margin-bottom: 80px;
+      }
+      #container{
+        width: 61%;
+        height: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,200px);
     gap: 20px;
-    display:grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows:auto;
     margin: auto;
-}
-#main>div{
-    height:350px;
-    margin: auto;
-}
-#main>div:nth-child(1){
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-#main>div:nth-child(2){
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-#main>div:nth-child(3){
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-}
-@media only screen and (min-width: 421px) and (max-width: 780px) {
-            #main{
-                grid-template-columns: repeat(2,1fr);
-                grid-template-rows:auto;
-            }
+    /* background-color: green; */
+
+      }
+      #container>div{
+        border: 1px solid red;
+        display: flex;
         
-         }
-         @media only screen and (min-width: 70px) and (max-width: 420px) {
-      #main{
-           grid-template-columns: repeat(1,1fr);
-        grid-template-rows: auto;
+      }
+      img{
+        height: 198px;
+    width: 189px;
+
+      }
+      #container>div>div{
+        margin-left: 24px;
+      }
+      button{
+        color: white;
+        background-color: #f84364;
+        text-align: center;
+        font-size: 20px;
+      }
+      /* Medium screens */
+      @media only screen and (min-width: 421px) and (max-width: 780px) {
+        img{
+           border-radius: 50%;
         }
-    }
+        #container>div{
+          flex-direction: column;
+        }
+       #container{
+          grid-template-rows:auto;
+       
+       }
+      }
+      
+      /* small screens */
+      @media only screen and (min-width: 70px) and (max-width: 420px) {
+        img{
+          border-radius: 50%;
+          
+        }
+        #container{
+          grid-template-columns: repeat(1,1fr);
+          grid-template-rows: auto;
+         
+        }
+        #container>div{
+          flex-direction: column;
+          padding: 15px;
+        }
+      }
 
 
     </style>
-</head>
-<body>
-    <div class="container">
+  </head>
+  <body>
+
+  <h1>Just movies</h1>
+    <div id="container">
+      <div>
+  <img src="https://m.media-amazon.com/images/M/MV5BMzNhOTdlNmUtYzNiYi00MmUxLTg3ZjgtZjk4Y2Y5YTk3ODdiXkEyXkFqcGdeQXVyMTE2MjAzMTU3._V1_.jpg" alt="">
+<div>
+  <h2>Gull Boy</h2>
+  <p>Relised was 3march 2020</p>
+  <button>BOOK TICKET</button>
+</div>
+</div>
+<div>
+        <img src="https://i.ytimg.com/vi/JfbxcD6biOk/maxresdefault.jpg" alt="">
         <div>
-            <h1 style="inline-size: 435px;padding-left: 253px;
-
-            padding-top: 48px;">Choose a plan that right for your business</h1>
-            <p style="padding-left: 206px;inline-size: 497px;font-size: 20px;
-            color: black;">we collect reviews from our user so you can get an honest opinion of what an experience wit hour website are really like</p>
+        <h2>Gull Boy</h2>
+        <p>Relised was 3march 2020</p>
+        <button>BOOK TICKET</button>
+      </div>
+      
+      </div>
+      <div>
+        <img src="https://m.media-amazon.com/images/M/MV5BOTllNjVkY2ItMjA3OC00ODE5LWE3MWMtMjdjZTQ1N2NlYjRmXkEyXkFqcGdeQXVyNDI3NjU1NzQ@._V1_.jpg" alt="">
+<div>      
+    <h2>Gull Boy</h2>
+  <p>Relised was 3march 2020</p>
+  <button>BOOK TICKET</button>
+</div>      
+      </div>
+      <div>
+        <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202001/Gangubai_Kathiawadi_Movie_Trailer_Release_Date_Cast_Songs_Reviews_Ratings_Ticket_Offers_Online_Booking-250x358_1579263554.jpg" alt="">
+<div>       
+   <h2>Gull Boy</h2>
+  <p>Relised was 3march 2020</p>
+  <button>BOOK TICKET</button>
+</div>
+      </div>
+      <div>
+        <img src="https://flxt.tmsimg.com/assets/p10998_p_v8_ao.jpg" alt="">
+        <div>
+          <h2>Gull Boy</h2>
+          <p>Relised was 3march 2020</p>
+          <button>BOOK TICKET</button>
+        
         </div>
-        <div id="main">
-            <div>
-                <h2 style="color: black;
-                padding-left: 69px"> Starter Plan</h2>
-                <h1 style="color: green; padding-left: 94px;">Free</h1>
-                <p style="font-variant:initial;padding-left: 100px;
-                margin-top: -18px">per month</p>
-                <h3 style="inline-size: 256px;
-                margin: 11px;" >we collect reviews from 
-                    our user so you can get an honest opinion of what an experience with our website.</h3>
-                    <button style="border: 1x solid blue;color:blue;margin-left: 90p;
-                    margin-left: 90px;
-                    margin-top: 36px;
-                    height: 42px;
-                    width: 116px;
-                    background-color: white;
-                    border-radius:10px;
-                    font-size: 17px;"><b>Start Now</b></button>
-            </div>
-            <div>
-                
-                <h2 style="color: black; padding-left: 69px">Business Plan </h2>
-                <h1  style="color: orangered; padding-left: 94px;">$39.00</h1>
-                <p style="padding-left: 107px;
-                margin-top: -18px">per month</p>
-                <h3 style="inline-size: 256px;
-                margin: 11px;">we collect reviews from 
-                    our user so you can get an honest opinion of what an experience with our website.</h3>
-                    <button style="border: 1x solid blue;color:white;margin-left: 90p;
-                    margin-left: 90px;
-                    margin-top: 36px;
-                    height: 42px;
-                    width: 116px;
-                    font-size: 17px;background-color: blue;
-                    border-radius:10px;
-
-"><b>Start Now</b></button>
-            </div>
-            <div>
-                
-                <h2 style="color: black;
-                padding-left: 69px">Premium Plan</h2>
-                <h1 style="color: green;
-                padding-left: 94px;">$59.00</h1>
-                <p style="padding-left: 107px;
-                margin-top: -18px">per month</p>
-                <h3 style="inline-size: 256px;
-                margin: 11px;">we collect reviews from 
-                    our user so you can get an honest opinion of what an experience with our website.</h3>
-                    <button style="border: 1x solid blue;color:blue;margin-left: 90p;
-                    margin-left: 90px;
-                    margin-top: 36px;
-                    height: 42px;
-                    width: 116px;
-                    font-size: 17px;background-color: white;
-                    border-radius:10px;
-
-                "><b>Start Now</b></button>
-            </div>
+      </div>
+      <div> 
+        <img src="https://offscreen.com/images/articles/_resized/15_5_Inception1.jpg" alt="">
+        <div>
+          <h2>Inception movies</h2>
+          <p>Released on 5th march</p>
+          <button>BOOK TICKET</button>
+        
         </div>
+
+      </div>
     </div>
-
-</body>
+  </body>
 </html>
