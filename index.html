@@ -1,0 +1,129 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media quaries</title>
+    <style>
+.container{
+    height: 90%;
+    width: 80%;
+    margin: auto;
+}
+.container>div{
+    height: 250px;
+    width: 70%;
+    margin: auto;
+}
+#main{
+    height: 350px;
+    width:70%;
+    gap: 20px;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:auto;
+    margin: auto;
+}
+#main>div{
+    height:350px;
+    margin: auto;
+}
+#main>div:nth-child(1){
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#main>div:nth-child(2){
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+#main>div:nth-child(3){
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+@media only screen and (min-width: 421px) and (max-width: 780px) {
+            #main{
+                grid-template-columns: repeat(2,1fr);
+                grid-template-rows:auto;
+            }
+        
+         }
+         @media only screen and (min-width: 70px) and (max-width: 420px) {
+      #main{
+           grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 style="inline-size: 435px;padding-left: 253px;
+
+            padding-top: 48px;">Choose a plan that right for your business</h1>
+            <p style="padding-left: 206px;inline-size: 497px;font-size: 20px;
+            color: black;">we collect reviews from our user so you can get an honest opinion of what an experience wit hour website are really like</p>
+        </div>
+        <div id="main">
+            <div>
+                <h2 style="color: black;
+                padding-left: 69px"> Starter Plan</h2>
+                <h1 style="color: green; padding-left: 94px;">Free</h1>
+                <p style="font-variant:initial;padding-left: 100px;
+                margin-top: -18px">per month</p>
+                <h3 style="inline-size: 256px;
+                margin: 11px;" >we collect reviews from 
+                    our user so you can get an honest opinion of what an experience with our website.</h3>
+                    <button style="border: 1x solid blue;color:blue;margin-left: 90p;
+                    margin-left: 90px;
+                    margin-top: 36px;
+                    height: 42px;
+                    width: 116px;
+                    background-color: white;
+                    border-radius:10px;
+                    font-size: 17px;"><b>Start Now</b></button>
+            </div>
+            <div>
+                
+                <h2 style="color: black; padding-left: 69px">Business Plan </h2>
+                <h1  style="color: orangered; padding-left: 94px;">$39.00</h1>
+                <p style="padding-left: 107px;
+                margin-top: -18px">per month</p>
+                <h3 style="inline-size: 256px;
+                margin: 11px;">we collect reviews from 
+                    our user so you can get an honest opinion of what an experience with our website.</h3>
+                    <button style="border: 1x solid blue;color:white;margin-left: 90p;
+                    margin-left: 90px;
+                    margin-top: 36px;
+                    height: 42px;
+                    width: 116px;
+                    font-size: 17px;background-color: blue;
+                    border-radius:10px;
+
+"><b>Start Now</b></button>
+            </div>
+            <div>
+                
+                <h2 style="color: black;
+                padding-left: 69px">Premium Plan</h2>
+                <h1 style="color: green;
+                padding-left: 94px;">$59.00</h1>
+                <p style="padding-left: 107px;
+                margin-top: -18px">per month</p>
+                <h3 style="inline-size: 256px;
+                margin: 11px;">we collect reviews from 
+                    our user so you can get an honest opinion of what an experience with our website.</h3>
+                    <button style="border: 1x solid blue;color:blue;margin-left: 90p;
+                    margin-left: 90px;
+                    margin-top: 36px;
+                    height: 42px;
+                    width: 116px;
+                    font-size: 17px;background-color: white;
+                    border-radius:10px;
+
+                "><b>Start Now</b></button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
