@@ -1,0 +1,56 @@
+#Home{
+    height: 60px;
+    width: 1327px;
+    border: 1px solid red;
+    margin-top: 20px;
+    background-color: blueviolet;
+}
+#box{
+    display: flex;
+    gap: 30px;
+    font-size: larger;
+    margin-left: 1087px;
+    margin-top: 20px;
+    background-color: skyblue;    
+
+}
+#container{
+height: 400px;
+width: 1350px;
+border: 1px solid black;
+
+
+
+}
+#slideshow{
+    text-align: center;
+    margin-top: 10px;
+    
+}
+#movies{
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: auto;
+     display: grid;
+     gap: 50px;
+     height: 500px;
+     width: 1300px;
+    margin: auto;
+    margin-top: 20px;
+
+}
+#movies>#div{
+    height: 330px;
+    width: 230px;
+    gap: 30px;
+    border: 1px solid blue;
+
+}
+img{
+    height: 200px;
+    width: 230px;
+}
+/* #sort-buttons{ */
+    /* height: 50px;
+    width: 100px;
+    border: 1px solid green; */
+/* } */

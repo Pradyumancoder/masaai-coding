@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Home</title>
+
+        <link rel="stylesheet" type="text/css" href="styles/index.css"/>
+        
+
+    </head>
+
+    <body>
+        <div id="container">
+        <div id="Home">
+            <div id="box">
+
+
+
+            <a href="index.html" style="text-decoration:none ">Home</a>
+             <a href="login.html"style="text-decoration:none">longin</a>
+              <a href="signup.html"style="text-decoration:none ">signup</a>
+            </div>     
+        </div>
+
+
+       
+
+        <div id="slideshow">
+
+        </div>
+
+    </div>
+
+
+        <div id="sort-buttons">
+            
+          
+            <select id="sortSalary" onchange="handleSalarySort()">
+                <option value="">Sort By Price</option>
+                <option value="htl">High to Low</option>
+                <option value="lth">Low to High</option>
+            </select>
+
+            <!--Add sorting here-->
+    
+            <!-- <label for="sorting"> Select </label> -->
+            
+        </div>
+        <br>
+        <h1>Latest movies</h1>
+        <br>
+        <div id="movies">
+            <!--Show list of movies here-->
+            <div id="div">
+                <img  src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-360780/portrait/00360780cover1712841787.jpg" alt="">
+                <h3>MASTER</h3>
+                <P>13 January 2021</P>
+                <h4>IMDBb RATING:8.1/10</h4>
+            </div>
+            <div id="div">
+                <img src="https://image.scoopwhoop.com/w620/s4.scoopwhoop.com/anj2/5dd3c34850758d6730e4f44f/5636c60d-73dc-4a03-ab74-ccdb5b655831.jpg.webp" alt="">
+                <h3>Band Baaja Baaraat
+                </h3>
+                <P>10 December 2010
+                </P>
+                <h4>IMDBb RATING:7.2/10</h4>            </div>
+            <div id="div">
+                <img src="https://image.scoopwhoop.com/w620/s4.scoopwhoop.com/anj2/5dd3c34850758d6730e4f44f/fbbe0cd5-c678-4692-85f1-2ed3844fdc8f.jpg.webp" alt="">
+                <h3>ishqiya </h3>
+                <P>29 January 2010
+                </P>
+                <h4>IMDBb RATING:7.3/10</h4>
+            </div>
+            <div id="div">
+                <img src="https://qqcdnpictest.mxplay.com/pic/9fc734ad705381dc9f53771d1696ffd5/en/2x3/320x480/c1bd3892b58d9780f9f6ad9af205d0f8_1280x1920.webp" alt="">
+                <h3>Heart Attack
+                </h3>
+                <P>31 January 2014
+                </P>
+                <h4>IMDBb RATING:5.3/10</h4>
+                 </div>
+            <div id="div">
+                <img src="https://i.ytimg.com/vi/U8J6SjDCmZY/hqdefault.jpg" alt="">
+                <h3>fever</h3>
+                <P>13 January 2019</P>
+                <h4>IMDBb RATING:6.1/10</h4>
+            </div>
+            <div id="div">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_504,h_756,c_scale,f_webp,q_auto:eco/resources/0-0-2481/portrait/002481cover31066131.jpg" alt="">
+                <h3>Commando 3
+                </h3>
+                <P>29 November 2019
+                </P>
+                <h4>IMDBb RATING:5.8/10</h4>
+            </div>
+            <div id="div">
+                <img src="https://assets.gadgets360cdn.com/pricee/assets/product/202203/Mishan-Impossible-poster_1647972425.jpg" alt="">
+                <h3>Mission: Impossible</h3>
+                <P>13 January 2021</P>
+                <h4>IMDBb RATING:7.1/10</h4>
+            </div>
+            <div id="div">
+                <img src="https://akamaividz2.zee5.com/image/upload/w_267,h_401,c_scale,f_auto,q_auto/resources/0-0-86035/portrait/0086035_in_cover.jpg" alt="">
+                <h3>Jabariya Jodi
+                </h3>
+                <P>9 August 2019
+                </P>
+                <h4>IMDBb RATING:5.0/10</h4>
+            </div>
+            <div id="div">
+                <img src="https://i.pinimg.com/originals/95/5b/a1/955ba1129e92c5eee06303025e5dbcdd.jpg" alt="">
+                <h3>shaandaar</h3>
+                <P>03 January 209</P>
+                <h4>IMDBb RATING:6.1/10</h4>
+            </div>
+
+        </div>
+
+        <script src="index.js"></script>    
+        <script src="login.js"></script>
+        <script src="signup.js"></script>    
+
+    </body>
+
+
+</html>
+
+
+<script>
+    let movies=["https://swaddle-wkwcb6s.stackpathdns.com/wp-content/uploads/2017/04/Dangal@2x-225x300.jpg",
+             "https://swaddle-wkwcb6s.stackpathdns.com/wp-content/uploads/2017/04/Kabhi-Khushi-Kabhie-Gham@2x-259x300.jpg" ,
+            "https://swaddle-wkwcb6s.stackpathdns.com/wp-content/uploads/2017/04/Mohabbatein@2x-219x300.jpg",
+             "https://swaddle-wkwcb6s.stackpathdns.com/wp-content/uploads/2017/04/Wake-Up-Sid@2x-208x300.jpg",
+            "https://swaddle-wkwcb6s.stackpathdns.com/wp-content/uploads/2017/04/3-Idiots@2x-208x300.jpg"]
+//  let images_div=document.getElementById("image")
+ let i=0;
+//  let id;
+//  function start(){
+//      let images_arr=JSON.parse(localStorage.getItem("images"))
+
+
+ let img=document.createElement("img")
+ id=setInterval(function(){
+     if(i==movies.length){
+         i=0
+     }
+     else{
+         img.src=movies[i];
+         document.getElementById("slideshow").append(img)
+        
+    
+     i++;
+     }
+ } ,2000)
+
+ 
+ function handleSalarySort() {
+        var selected = document.querySelector("#sortSalary").value;
+        // console.log(selected);
+        if (selected == "htl") {
+            data1.sort(function (a, b) {
+                return b.price - a.price;
+            });
+            document.querySelector("#container").innerHTML = "";
+            console.log(displatdata);
+            displatdata(data1);
+            // window.location.reload()
+        }
+
+        if (selected == "lth") {
+            data1.sort(function (a, b) {
+                return a.price - b.price;
+            });
+            document.querySelector("#container").innerHTML = "";
+            console.log(displatdata);
+            displatdata(data1)
+            // window.location.reload()
+        }
+
+    }
+ 
+window.addEventListener("load", function () {
+        displatdata(data1);
+    });
+
+    function displatdata(data1) { }
+
+
+</script>

@@ -1,0 +1,30 @@
+#login{
+    height: 60px;
+    width: 1327px;
+    border: 1px solid red;
+    margin-top: 20px;
+    background-color: blueviolet;
+
+}
+#box{
+    display: flex;
+    gap: 20px;
+    font-size: larger;
+    margin-left: 1087px;
+    margin-top: 20px;
+    background-color: skyblue; 
+}
+#loginpage{
+    height: 170px;
+    width: 300px;
+    margin: auto;
+    margin-top: 126px;;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#btn{
+    width: 91px ;
+    color: white;
+    background-color:  #008080;
+}

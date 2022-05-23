@@ -1,0 +1,32 @@
+#signup{
+    height: 60px;
+    width: 1327px;
+    border: 1px solid red;
+    margin-top: 20px;
+    background-color: blueviolet;
+
+}
+#box{
+    display: flex;
+    gap: 30px;
+    font-size: larger;
+    margin-left: 1087px;
+    margin-top : 20px;
+    color: black;
+    background-color: skyblue;
+
+}
+#signuppage{
+    height: 280px;
+    width: 300px;
+    margin: auto;
+    margin-top: 126px;;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+#btn{
+    color: white;
+    background-color: #008080;
+    width: 91px;
+}
