@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap: 20px;
+            color: blue;
+            background-image: -moz-repeating-radial-gradient();
+
+
+        }
+        img{
+            height: 350px;
+            width: 350px;
+            box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;      
+            border-color: aqua;
+          }
+    </style>
+</head>
+<body>
+    <h3>Movies</h3>
+    <input type="search"placeholder="Search Movies" id="search">
+    <button id="btn" onclick="search_button()">SEARCH</button>
+    <br><br>
+
+    <div id="container">
+    
+    </div>
+    
+</body>
+</html>
+<script src="index.js"></script>
